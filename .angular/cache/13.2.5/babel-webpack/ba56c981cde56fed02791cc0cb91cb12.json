@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var QUEUE_TYPE = /*#__PURE__*/(() => {\n  (function (QUEUE_TYPE) {\n    QUEUE_TYPE[\"SOLO\"] = \"RANKED_SOLO_5x5\";\n    QUEUE_TYPE[\"FLEX\"] = \"RANKED_FLEX_SR\";\n  })(QUEUE_TYPE || (QUEUE_TYPE = {}));\n\n  return QUEUE_TYPE;\n})();","map":null,"metadata":{},"sourceType":"module"}

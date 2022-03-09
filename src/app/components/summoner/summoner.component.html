@@ -1,0 +1,19 @@
+<div *ngIf="summoner">
+    <app-summoner-profile [selectedSummoner]="summoner"></app-summoner-profile>
+    <div class="contentContainer">
+        <div class="rankedInfoContainer">
+            <div class="paddingContainer">
+                <app-ranked-detail [rankedStats]="rankedStats[solo]"></app-ranked-detail>
+            </div>
+            <div class="paddingContainer">
+                <app-ranked-detail [rankedStats]="rankedStats[flex]"></app-ranked-detail>
+            </div>
+        </div>
+        <div class="matchHistoryContainer">
+            <div class="paddingContainer">
+                <app-matchhistory [puuid]="summoner.puuid"></app-matchhistory>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,32 @@
+<div *ngIf="filteredStats">
+    <div class="headerContainer">
+        <div class="headerFieldChampion">
+            Champion
+        </div>
+        <div class="headerFieldWinrate">
+            Win Rate
+        </div>
+        <div class="headerFieldPickrate">
+            Pick Rate
+        </div>
+        <div class="headerFieldGames">
+            Games
+        </div>
+    </div>
+    <div *ngFor="let stats of filteredStats; index as rank" class="champDetailContainer">
+        <div class="imageContainer">
+            <img src="https://opgg-static.akamaized.net/meta/images/lol/1205/champion/{{stats.championName | championNamePipe}}.png" alt="">
+            <br>
+            {{stats.championName}}
+        </div>
+        <div class="statsContainer">
+            {{stats.winrate | number: '0.1'}}% (<span class="wins">{{stats.wins}}W</span> / <span class="losses">{{stats.games - stats.wins}}L</span>)
+        </div>
+        <div class="pickrateContainer">
+            {{stats.pickrate | number: '0.1'}}%
+        </div>
+        <div class="gamesContainer">
+            {{stats.games}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+$platinum: #E6E8E6; // greyisch
+$black: #080708;
+$blue: #3772FF;
+$red: #DF2935;
+$yellow: #FDCA40;
+
+.search {
+    position: relative;
+    width: 700px;
+}
+
+.searchInput {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    padding: 10px 100px 10px 20px; 
+    line-height: 1;
+    box-sizing: border-box;
+    outline: none;
+    height:40px;
+  }
+
+.inputButton {
+    position: absolute;
+    right: 0px; 
+    top: 0px;
+    bottom: 3px;
+    border: 0;
+    background: $blue;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height:40px;
+}
+
+.inputButton:active, .inputButton:hover {
+    background-color: #3060cf
+} 
+

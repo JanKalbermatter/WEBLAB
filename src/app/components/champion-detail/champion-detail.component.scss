@@ -1,0 +1,73 @@
+$platinum: #E6E8E6; 
+
+img {
+    width:40px;
+    height:40px;
+}
+
+.champDetailContainer {
+    display: flex;
+    background-color: $platinum;
+    min-height:60px;
+    border-bottom: 1px white solid;
+    width:100%;
+    text-align: center;
+
+    .imageContainer {
+        flex-basis:10%;
+        margin:10px;
+    }
+
+    .statsContainer {
+        flex-basis: 20%;
+        margin:10px;
+
+        .wins {
+            color: #167516;
+        }
+
+        .losses {
+            color: #DF2935;
+        }
+    }
+
+    .pickrateContainer {
+        flex-basis: 20%;
+        margin:10px;
+    }
+
+    .gamesContainer {
+        flex-basis: 20%;
+        margin:10px;
+    }
+}
+
+.headerContainer {
+    display: flex;
+    font-weight: 700;
+    position: sticky;
+    top:0;
+    width:100%;
+    background-color:white;
+    text-align: center;
+
+    .headerFieldChampion {
+        flex-basis:10%;
+        margin:10px;
+    }
+
+    .headerFieldWinrate {
+        flex-basis:20%;
+        margin:10px;
+    }
+
+    .headerFieldPickrate {
+        flex-basis:20%;
+        margin:10px;
+    }
+
+    .headerFieldGames {
+        flex-basis:20%;
+        margin:10px;
+    }
+}

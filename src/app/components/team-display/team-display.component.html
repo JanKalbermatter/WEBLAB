@@ -1,0 +1,9 @@
+
+<ul *ngIf="team">
+    <li *ngFor="let member of team">
+        <img src="https://opgg-static.akamaized.net/meta/images/lol/1205/champion/{{member.championName | championNamePipe}}.png" alt="" class="smallChampionIcon">
+        <div class="summonerNameText">
+            <a (click)="goToSummoner(member.summonerName)">{{member.summonerName}}</a>
+        </div>
+    </li>
+</ul>

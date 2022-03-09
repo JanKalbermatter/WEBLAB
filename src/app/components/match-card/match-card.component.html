@@ -1,0 +1,34 @@
+<div [ngClass]="{
+    'well': true,
+    'matchCard': true,
+    'red': !match.info.teams[0].win,
+    'blue': match.info.teams[0].win
+}">
+    <div class="matchTimingContainer" >
+        {{match.info.gameStartTimestamp | date}}
+        <br>
+        {{match.info.gameDuration * 1000 | date:'mm:ss'}}
+        <br>
+    </div>
+    <div class="championContainer" >
+        <img src="https://opgg-static.akamaized.net/meta/images/lol/1205/champion/{{playerStats.championName | championNamePipe}}.png" alt="">
+    </div>
+    <div class="combatStatsContainer" *ngIf="playerStats">
+        <div class="scoreContainer">
+            <span>{{playerStats.stats.kills}}</span> / <span class="deaths">{{playerStats.stats.deaths}}</span> / <span>{{playerStats.stats.assists}}</span>
+            <br>
+            <span class="kda">{{playerStats.stats.kda | number : '.1'}}:1</span> KDA
+        </div>
+        <br>
+    </div>
+    <div class="statsContainer" *ngIf="playerStats">
+        {{playerStats.totalMinionsKilled}} CS  
+        <br>
+        <app-item-display [items]="playerStats.items" [trinket]="playerStats.trinket"></app-item-display>
+    </div>
+    <div class="teamContainer" *ngIf="teams">
+        <app-team-display [team]="teams.team100"></app-team-display>
+        <app-team-display [team]="teams.team200"></app-team-display>
+    </div>
+    <br>
+</div>

@@ -1,0 +1,18 @@
+<nav class="navbar">
+    <a class="nav-brand">{{title}}</a>
+    <a *ngIf="authService.isLoggedIn" routerLink="/search" class="nav-item" routerLinkActive="active">
+        <span>Search</span>
+    </a>
+    <a *ngIf="authService.isLoggedIn" routerLink="/topPlayers" class="nav-item" routerLinkActive="active">
+        <span>Challengers</span>
+    </a>
+    <a *ngIf="authService.isLoggedIn" routerLink="/champions" class="nav-item" routerLinkActive="active">
+        <span>Champions</span>
+    </a>
+    <a *ngIf="authService.isLoggedIn" routerLink="/followed" class="nav-item" routerLinkActive="active">
+        <span>Followed</span>
+    </a>
+    <div *ngIf="authService.isLoggedIn" class="nav-item nav-logout"> 
+        <a (click)="authService.SignOut()">Logout</a>
+    </div>
+</nav>

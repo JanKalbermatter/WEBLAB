@@ -1,0 +1,25 @@
+ul {
+    list-style-type: none;
+    height:100%;
+
+    li {
+        display: flex;
+        padding:2px;
+
+        .summonerNameText {
+            margin-left:3px;
+            a {
+                color: black;
+                text-decoration: none;
+                cursor:pointer;
+                font-weight:500;
+            }
+        }
+        
+    }
+
+    .smallChampionIcon {
+        height: 24px;
+        width: 24px;
+    }
+}

@@ -1,0 +1,24 @@
+$platinum: #E6E8E6; // greyisch
+$black: #080708;
+$blue: #3772FF;
+$red: #DF2935;
+$yellow: #FDCA40;
+
+.profileContainer {
+    display: flex;
+}
+
+.profilePicture {
+    width: 150px;
+    height: 150px;
+    padding-right: 20px;
+
+    img {
+        width:100%;
+        height: 100%;
+    }
+}
+
+.summonerInfo {
+    padding-right: 15px;
+}

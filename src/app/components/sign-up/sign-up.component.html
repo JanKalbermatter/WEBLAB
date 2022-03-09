@@ -1,0 +1,25 @@
+<div class="centerDiv">
+    <div class="container">
+      <div class="authBlock">
+        <h3>Sign Up</h3>
+        <div class="formGroup">
+          <input type="email" class="formControl" placeholder="E-Mail" #userEmail required />
+        </div>
+        <div class="formGroup">
+          <input type="password" class="formControl"  placeholder="Password" #userPassword required/>
+        </div>
+        <div class="flex">
+          <button type="button" class="btn-primary" (click)="authService.SignUp(userEmail.value, userPassword.value)" style="margin-right:10px">
+            Create Account
+          </button>
+          <button type="button" class="btn-default" (click)="authService.GoogleAuth()">
+            Log in with Google
+          </button>
+        </div>
+      </div>
+      <div class="redirectToLogin">
+        <span>Already have an account?
+          <span class="redirect" routerLink="/sign-in">Log In</span></span>
+      </div>
+    </div>
+  </div>

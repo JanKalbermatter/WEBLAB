@@ -1,0 +1,15 @@
+<div class="followedContainer" *ngIf="subscriptions && subscriptions.summoners.length > 0">
+    <h1>Followed Profiles</h1>
+    <div *ngFor="let summoner of subscriptions.summoners" class="flex-center">
+        <h3>
+            <a routerLink="/summoner/{{summoner.name}}" class="nav-item active flex-center">
+                <img src="https://opgg-static.akamaized.net/images/profile_icons/profileIcon{{summoner.profilePictureId}}.jpg" alt="Profile Picture">
+                <span>{{summoner.name}}</span>
+            </a>
+        </h3>
+        <button class="btn-danger btn-xs" (click)="unfollow(summoner.name)">Unfollow</button>
+    </div>
+</div>
+<div class="followedContainer" *ngIf="!subscriptions || subscriptions.summoners.length === 0">
+    <h1>No followed Profiles</h1>
+</div>

@@ -1,0 +1,19 @@
+
+.contentContainer {
+    display: flex;
+    flex-wrap:wrap;
+
+    .rankedInfoContainer {
+        flex-basis:30%;
+
+        .paddingContainer {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    .matchHistoryContainer {
+        flex-basis:65%;
+        border-left: 1px solid #ccc
+    }
+    
+}

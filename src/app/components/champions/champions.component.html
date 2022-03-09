@@ -1,0 +1,11 @@
+<div *ngIf="championStats">
+    <h4>Champion Statistic from {{totalGames}} games. Only Rank Platinum+</h4>
+    <select name="roleSelect" id="roleSelect" (change)="updateRole(roleSelect.value)" #roleSelect>
+        <option value="TOP">Toplane</option>
+        <option value="JUNGLE">Jungle</option>
+        <option value="MID" selected>Midlane</option>
+        <option value="ADC">ADC</option>
+        <option value="SUPPORT">Support</option>
+    </select>
+    <app-champion-detail [stats]="championStats" [role]="selectedRole"></app-champion-detail>
+</div>

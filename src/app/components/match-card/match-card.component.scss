@@ -1,0 +1,79 @@
+$blue: #3772FF;
+$lightBlue: #81a3f3;
+$red: #DF2935;
+$lightRed: #db444e;
+$lighterRed: #db848a;
+$platinum: #E6E8E6;
+
+.blue {
+    background-color: $lightBlue
+}
+
+.red {
+    background-color: $lighterRed
+}
+
+.matchCard {
+    font-size: 14px;
+    padding:5px;
+    padding-right:15px;
+    margin-bottom:10px;
+    display: flex;
+
+    .matchTimingContainer {
+        height:100%;
+    }
+
+    .championContainer {
+        display: flex;
+        align-items: center;
+        margin: 0px 10px;
+        img {
+            width:60px;
+            height:60px;
+            border-radius:150px;
+        }
+    }
+
+    .combatStatsContainer {
+        margin: 0px 10px;
+        height:100%;
+
+        .scoreContainer {
+            color: rgb(73, 72, 72);
+            font-weight: 400;
+            span {
+                font-weight: 600;
+                color:black;
+            }
+            .deaths {
+                color: $red;
+            }
+        }
+
+        .pillContainer {
+            padding-bottom: 20px;
+            height:150px;
+            .pill {
+                background-color: $lightRed;
+                border: 1px solid $red;
+                border-radius:30px;
+                padding: 2px 15px;
+                height:18px;
+            }
+        }
+    }
+
+    .statsContainer {
+        margin: 0px 10px;
+        height:100%;
+    }
+
+    .teamContainer {
+        display: flex;
+
+        app-team-display {
+            height: 100%;
+        }
+    }
+}

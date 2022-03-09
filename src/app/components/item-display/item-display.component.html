@@ -1,0 +1,8 @@
+<ul *ngIf="items && trinket" class="itemContainer">
+    <li *ngFor="let item of items" class="item platinum">
+        <img *ngIf="item != 0" src="https://opgg-static.akamaized.net/meta/images/lol/1205/item/{{item}}.png" alt="">
+    </li>
+    <li class="item platinum">
+        <img *ngIf="trinket != 0" src="https://opgg-static.akamaized.net/meta/images/lol/1205/item/{{trinket}}.png" alt="">
+    </li>
+</ul>

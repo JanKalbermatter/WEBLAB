@@ -1,0 +1,38 @@
+
+$blue: #3772FF;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: $blue;
+    height: 50px;
+
+    .nav-brand {
+        color: white;
+        padding:15px 25px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .nav-item {
+        color: white;
+        text-decoration: none;
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 24px;
+        height: inherit;
+    }
+
+    .nav-item:hover, .nav-item.active {
+        background-color: #2e5fcf;
+    }
+
+
+    .nav-logout {
+        margin-left: auto;
+        padding:0px 25px;
+        cursor: pointer;
+    }
+}

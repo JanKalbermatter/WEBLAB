@@ -1,0 +1,7 @@
+<div class="historyContainer" *ngIf="matches">
+    <button class="btn-primary" (click)="updateMatchData()">Update</button>
+    <br>
+    <div *ngFor="let match of matches">
+        <app-match-card [match]="match" [puuid]="puuid"></app-match-card>
+    </div>
+</div>

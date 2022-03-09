@@ -1,0 +1,184 @@
+$platinum: #E6E8E6; // greyisch
+$black: #080708;
+$blue: #3772FF;
+$red: #DF2935;
+$yellow: #FDCA40;
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    margin: 0px;
+    font-family: Roboto, 
+    "Helvetica Neue", sans-serif; 
+}
+
+.platinum {
+    background-color: $platinum
+}
+
+.black {
+    background-color: $black
+}
+
+.blue {
+    background-color: $blue
+}
+
+.red {
+    background-color: $red
+}
+
+.yellow {
+    background-color: $yellow
+}
+
+.content {
+    padding:25px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: 0;
+    background: $blue;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding:10px;
+    font-size: 15px;
+    border: 1px solid #3060cf;
+}
+
+.btn-primary:active {
+    background-color: #3060cf;
+} 
+
+.btn-default {
+    border: 0;
+    background: $platinum;
+    color: black;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding:10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+
+.btn-default:active {
+    background-color: #b9b9b9;
+}
+
+.btn-danger {
+    border: 0;
+    background: $red;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding:10px;
+    font-size: 15px;
+    border: 1px solid #b41f29;
+}
+
+.btn-danger:active {
+    background-color: #b41f29;
+}
+
+.btn-warning {
+    border: 0;
+    background: $black;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding:10px;
+    font-size: 15px;
+    border: 1px solid #cfa635;
+}
+
+.btn-warning:active {
+    background-color: #cfa635;
+}
+
+.btn-xs {
+    padding:5px
+}
+
+.btn-lg {
+    padding:15px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.well {
+    background-color:$platinum;
+    padding: 15px;
+}
+
+.paddingContainer {
+    padding:15px;
+}
+
+.container {
+    padding:25px;
+    border: solid 1px #ccc;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 10px 100px 10px 20px;
+    line-height: 1;
+    box-sizing: border-box;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 1.33em;
+}
+
+.flex {
+    display:flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+<div class="profileContainer well" *ngIf="!displayBlock">
+    <div class="profilePicture">
+        <img src="https://opgg-static.akamaized.net/images/profile_icons/profileIcon{{selectedSummoner?.profileIconId}}.jpg" alt="Summoner Icon">
+    </div>
+    <div class="summonerInfo">
+        <h2>{{selectedSummoner?.name}} </h2>
+        <h3>Level {{selectedSummoner?.summonerLevel}}</h3>
+        <button class="btn-primary" *ngIf="!isFollower" (click)="followUser(selectedSummoner?.name, selectedSummoner?.profileIconId)">Follow User</button>
+    </div>
+</div>

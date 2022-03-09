@@ -1,0 +1,20 @@
+<table *ngIf="challengers">
+    <thead>
+        <tr>
+            <th>Rank #</th>
+            <th>Summoner</th>
+            <th>LP</th>
+            <th>Winrate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let summoner of challengers; index as rank">
+            <td>{{rank+1}}</td>
+            <td>
+                <a routerLink="/summoner/{{summoner.summonerName}}">{{summoner.summonerName}}</a>
+            </td>
+            <td>{{summoner.leaguePoints}}</td>
+            <td>{{(summoner.wins/(summoner.wins+summoner.losses)*100) | number: "2.2"}}% ({{summoner.wins}} / {{summoner.losses}})</td>
+        </tr>
+    </tbody>
+</table>
